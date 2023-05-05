@@ -1,3 +1,9 @@
+body, html
+{
+    font-size: 10px;
+}
+
+
 .containerFlex
 {
     display: flex;
@@ -20,14 +26,14 @@
     width: 66.6666666%;
 }
 
-.left
+.right
 {
-    float: left;
+    float: right;
 }
 
 .container
 {
-    padding: 10px;
+    padding: 1rem;
     /*margin: 10px;
     background-color: gray;
     border: 1px solid black;*/
@@ -36,4 +42,37 @@
 .container img
 {
     width: 100%;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width:720px) {
+
+    body, html
+    {
+        font-size: 5px;
+    }
+
+    .w50
+    {
+        width: 100%;
+    }
+
+    .w50 .w50
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body, html
+    {
+        font-size: 2px;
+    }
+
+    .w50 .w50, 
+    .w33,
+    .w66
+    {
+        width: 100%;
+    }
 }
